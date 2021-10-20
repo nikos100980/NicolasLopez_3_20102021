@@ -1,0 +1,19 @@
+{
+  "name": "nicolaslopez_3_20102021",
+  "version": "1.0.0",
+  "description": "Projet 3 :\"Ohmyfood\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikos100980/NicolasLopez_3_20102021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikos100980/NicolasLopez_3_20102021/issues"
+  },
+  "homepage": "https://github.com/nikos100980/NicolasLopez_3_20102021#readme"
+}
