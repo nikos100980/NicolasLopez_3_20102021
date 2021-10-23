@@ -79,9 +79,7 @@ i {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
-.Bloc-filter {
-  background-color: white;
+.container-filter__Bloc-filter {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
@@ -90,18 +88,75 @@ i {
 
 .Filter {
   background-color: #f2f2f2;
-  width: 300px;
+  width: 250px;
+  height: 50px;
   border: solid 1px #f2f2f2;
   border-radius: 15px;
-}
-.Filter__items {
+  margin-bottom: 10px;
   display: flex;
-  height: 50px;
-  width: 250px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-  justify-content: start;
+  position: relative;
+}
+.Filter__logo {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Filter__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+}
+.Filter__title--text-align {
+  justify-content: left;
+}
+.Filter__pastille {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356dc;
+  border-radius: 45px;
+  color: white;
+  position: absolute;
+  left: -6px;
+  width: 15px;
+  height: 15px;
+}
+
+.Bloc-restaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Bloc-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+.Bloc-card__img {
+  width: 300px;
+  height: 220px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.Bloc-card__title {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  height: 80px;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

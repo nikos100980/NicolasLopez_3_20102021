@@ -22,14 +22,57 @@
 }
 @mixin list {
   background-color: $color-body;
-  width: 300px;
+  width: 250px;
+  height: 50px;
   border: solid 1px $color-body;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 @mixin flex {
   display: flex;
-  height: 50px;
-  width: 250px;
   justify-content: center;
   align-items: center;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+@mixin logo-items {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pastille {
+    background-color: $color-primary;
+    border-radius: 45px;
+    color: white;
+    position: absolute;
+    left: -6px;
+    width: 15px;
+    height: 15px;
+
+}
+@mixin card {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+@mixin img {
+    width: 300px;
+    height: 220px;
+    border-radius: 15px 15px 0 0 ;
+    object-fit: cover;
+}
+@mixin title {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 80px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
 }

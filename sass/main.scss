@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 
+// Parametres generaux
 html {
   font-size: 62.5%;
 }
@@ -32,7 +33,7 @@ i {
   font-size: 1.4em;
   color: grey;
 }
-
+// En tête du site avec le header
 .header-search {
   @include header-search;
 
@@ -57,24 +58,54 @@ i {
     @include btn;
   }
 }
+// Bloc section avec les filtres du site
 .container-filter {
   background-color: white;
   padding-top: 40px;
   padding-bottom: 40px;
-}
-.Bloc-filter {
-  background-color: white;
-  padding-top: 20px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  &__Bloc-filter {
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .Filter {
   @include list;
-  &__items {
+  @include flex;
+  position: relative;
+  &__logo {
+    @include logo-items;
+  }
+  &__title {
     @include flex;
-    margin-bottom: 10px;
-    justify-content: start;
+    width: 200px;
+    height: 50px;
+
+    &--text-align {
+      justify-content: left;
+    }
+  }
+  &__pastille {
+    @include flex;
+    @include pastille;
+  }
+}
+// Section des restaurants comportant les vignettes
+.Bloc-restaurant{
+    @include flex;
+    justify-content: center;
+}
+.Bloc-card {
+  @include flex-column;
+  @include card;
+  
+  &__img{
+      @include img;
+  }
+  &__title{
+      @include title;
   }
 }
