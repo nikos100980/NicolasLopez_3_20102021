@@ -1,17 +1,39 @@
+html {
+  font-size: 62.5%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 1em;
 }
 
-h1, h2, h3 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-  font-size: 1.5em;
+body {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 2.7em;
+  font-weight: 600;
   line-height: 1em;
   text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+p,
+span,
+i {
+  font-size: 1.4em;
+  color: grey;
 }
 
 .header-search {
@@ -21,7 +43,6 @@ h1, h2, h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fafafa;
 }
 .header-search__form {
   width: 100%;
@@ -41,7 +62,7 @@ h1, h2, h3 {
   text-align: center;
 }
 .header-search__btn {
-  background: linear-gradient(to bottom, #FF79DB, #9456DC);
+  background: linear-gradient(to bottom, #ff79db, #9456dc);
   text-decoration: none;
   border: none;
   border-radius: 25px;
@@ -51,6 +72,36 @@ h1, h2, h3 {
   color: white;
   box-shadow: 5px 4px 24px -1px rgba(0, 0, 0, 0.51);
   cursor: pointer;
+}
+
+.container-filter {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.Bloc-filter {
+  background-color: white;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Filter {
+  background-color: #f2f2f2;
+  width: 300px;
+  border: solid 1px #f2f2f2;
+  border-radius: 15px;
+}
+.Filter__items {
+  display: flex;
+  height: 50px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: start;
 }
 
 /*# sourceMappingURL=style.css.map */

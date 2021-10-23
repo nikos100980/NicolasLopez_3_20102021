@@ -1,23 +1,35 @@
 // Declaration de mixins pour les boutons
 
 @mixin btn {
-    background: linear-gradient(to bottom, #FF79DB, #9456DC);
-    text-decoration: none;
-    border: none;
-    border-radius: 25px;
-    width: 200px;
-    height: 40px;
-    margin-bottom: 50px;
-    color: white;
-    box-shadow: 5px 4px 24px -1px rgba(0,0,0,0.51); 
-    cursor: pointer;
-    
+  background: linear-gradient(to bottom, #ff79db, #9456dc);
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  width: 200px;
+  height: 40px;
+  margin-bottom: 50px;
+  color: white;
+  box-shadow: 5px 4px 24px -1px rgba(0, 0, 0, 0.51);
+  cursor: pointer;
 }
 @mixin header-search {
-    display: flex;
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin list {
+  background-color: $color-body;
+  width: 300px;
+  border: solid 1px $color-body;
+  border-radius: 15px;
+}
+@mixin flex {
+  display: flex;
+  height: 50px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
 }

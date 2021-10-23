@@ -1,46 +1,80 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 
-
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    font-family: 'Roboto', sans-serif; 
-    font-size: 1em;
+html {
+  font-size: 62.5%;
 }
-h1,h2,h3{
-    font-family: 'Shrikhand',cursive;
-    font-weight: 400;
-    font-size: 1.5em;
-    line-height: 1em;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: $color-body;
+}
+h1 {
+  font-size: 2.7em;
+  font-weight: 600;
+  line-height: 1em;
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+p,
+span,
+i {
+  font-size: 1.4em;
+  color: grey;
+}
+
+.header-search {
+  @include header-search;
+
+  &__form {
+    width: 100%;
+    height: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e1e1;
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    margin-bottom: 25px;
     text-align: center;
+  }
+  &__btn {
+    @include btn;
+  }
 }
+.container-filter {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.Bloc-filter {
+  background-color: white;
+  padding-top: 20px;
 
-
-
-.header-search{
-    @include header-search;
-    background-color: #fafafa;
-        &__form{
-            width: 100%;
-            height: 40px;
-            border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color:#e4e1e1 ;
-            margin-bottom: 30px;
-        }
-        &__title{
-            margin-bottom: 10px;
-        }
-        &__subtitle{
-            margin-bottom: 25px;
-            text-align: center;
-        }
-        &__btn{
-            @include btn;
-
-        }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Filter {
+  @include list;
+  &__items {
+    @include flex;
+    margin-bottom: 10px;
+    justify-content: start;
+  }
 }

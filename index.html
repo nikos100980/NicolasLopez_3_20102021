@@ -10,36 +10,59 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./public/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <title>Ohmyfood</title>
   </head>
   <body>
-      <header class="header-search">
-        <div>
-            <img src="./images/logo/ohmyfood@2x.svg" alt="logo Site">
+    <!-- En tête de notre page acceuil -->
+    <header class="header-search">
+      <div>
+        <img src="./images/logo/ohmyfood@2x.svg" alt="logo Site" />
+      </div>
+      <form class="header-search__form">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="search" name="q" value="Paris, Belleville" />
+      </form>
+
+      <h1 class="header-search__title">Réservez le menu qui vous convient</h1>
+      <p class="header-search__subtitle">
+        Découvrez des restaurants d'exception, selectionnés par nos soins.
+      </p>
+      <button type="submit" class="header-search__btn">
+        Explorez nos restaurants
+      </button>
+    </header>
+
+    <main>
+      <!-- bloc fonctionnement avec ses filtres  -->
+      <section class="container-filter">
+        <h2>Fonctionnement</h2>
+        <div class="Bloc-filter">
+          <div class="Filter Filter__items">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Choisissez un restaurant</h3>
+            <span>1</span>
+          </div>
+          <div class="Filter Filter__items">
+            <i class="fas fa-list-ul"></i>
+            <h3>Composez votre menu</h3>
+            <span>2</span>
+          </div>
+          <div class="Filter Filter__items">
+            <i class="fas fa-store"></i>
+            <h3>Dégustez au restaurant</h3>
+            <span>3</span>
+          </div>
         </div>
-        <form class="header-search__form">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="search" name="q" value="Paris, Belleville">
-        </form>
-        
-            <h1 class="header-search__title"> Réservez le menu qui vous convient </h1>
-            <p class="header-search__subtitle" >Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
-            <button type="submit" class="header-search__btn">Explorez nos restaurants</button>
-        
-
-      </header>
-      <main>
-          <section>
-
-          </section>
-          <section>
-
-          </section>
-      </main>
-      <footer>
-
-      </footer>
+      </section>
+      <section></section>
+    </main>
+    <footer></footer>
   </body>
 </html>
