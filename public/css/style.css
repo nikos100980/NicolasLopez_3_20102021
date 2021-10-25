@@ -11,6 +11,8 @@ html {
 
 body {
   background-color: #f2f2f2;
+  max-width: 375px;
+  margin: auto;
 }
 
 h1 {
@@ -27,13 +29,17 @@ h2 {
 h3 {
   font-size: 1.3em;
   font-weight: 600;
+  color: black;
 }
 
 p,
 span,
 i {
   font-size: 1.4em;
-  color: grey;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header-search {
@@ -70,8 +76,8 @@ i {
   height: 40px;
   margin-bottom: 50px;
   color: white;
-  box-shadow: 5px 4px 24px -1px rgba(0, 0, 0, 0.51);
   cursor: pointer;
+  box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.2);
 }
 
 .container-filter {
@@ -83,7 +89,15 @@ i {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.section-title {
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 30px;
 }
 
 .Filter {
@@ -92,11 +106,13 @@ i {
   height: 50px;
   border: solid 1px #f2f2f2;
   border-radius: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.2);
   position: relative;
+  color: grey;
 }
 .Filter__logo {
   width: 40px;
@@ -129,34 +145,81 @@ i {
 }
 
 .Bloc-restaurant {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  width: 100%;
+  margin-bottom: 55px;
 }
 
 .Bloc-card {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.2);
+}
+.Bloc-card__pointer {
+  width: 100%;
+  height: auto;
+}
+.Bloc-card__img {
+  width: 100%;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  display: block;
+}
+.Bloc-card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  padding: 0 15px;
+  color: black;
+}
+.Bloc-card__title--font-size h3 {
+  font-size: 1.7em;
+}
+.Bloc-card__title--font-size p {
+  color: black;
+}
+.Bloc-card__new {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 70px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #99e2d0;
+  color: #00803a;
+  font-weight: bold;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Bloc-card__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.6em;
+  color: black;
+  font-weight: normal;
+}
+
+Footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
-  border-radius: 15px;
-}
-.Bloc-card__img {
-  width: 300px;
-  height: 220px;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-}
-.Bloc-card__title {
-  display: flex;
-  justify-content: space-around;
-  width: 300px;
-  height: 80px;
-  background-color: white;
-  border-radius: 0 0 15px 15px;
+  background-color: rgba(0, 0, 0, 0.808);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,9 +10,12 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  
 }
 body {
   background-color: $color-body;
+  max-width: 375px;
+  margin: auto;
 }
 h1 {
   font-size: 2.7em;
@@ -26,12 +29,16 @@ h2 {
 h3 {
   font-size: 1.3em;
   font-weight: 600;
+  color: black;
 }
 p,
 span,
 i {
   font-size: 1.4em;
-  color: grey;
+  
+}
+a{
+  text-decoration: none;
 }
 // En tête du site avec le header
 .header-search {
@@ -41,9 +48,7 @@ i {
     width: 100%;
     height: 40px;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex;
     background-color: #e4e1e1;
     margin-bottom: 30px;
   }
@@ -56,6 +61,7 @@ i {
   }
   &__btn {
     @include btn;
+    @include shadow;
   }
 }
 // Bloc section avec les filtres du site
@@ -66,16 +72,19 @@ i {
 
   &__Bloc-filter {
     padding-top: 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column;
+    
   }
+}
+.section-title{
+  @include section-title;
 }
 .Filter {
   @include list;
   @include flex;
+  @include shadow;
   position: relative;
+  color: grey;
   &__logo {
     @include logo-items;
   }
@@ -95,17 +104,45 @@ i {
 }
 // Section des restaurants comportant les vignettes
 .Bloc-restaurant{
-    @include flex;
-    justify-content: center;
+    @include grid;
+    width: 100%;
+    margin-bottom: 55px;
+    
+
+    
 }
-.Bloc-card {
-  @include flex-column;
+
+.Bloc-card{
+  &__pointer{
+    width: 100%;
+    height: auto;
+  }
   @include card;
-  
+  @include shadow;
   &__img{
-      @include img;
+    @include img;
+    
   }
   &__title{
-      @include title;
+    @include title;
+    &--font-size h3{
+      font-size: 1.7em;
+    }
+    &--font-size p{
+      color: black
+    }
+  }
+  &__new{
+    @include absolute;
+    @include flex;
+  }
+  &__like{
+    @include flex;
+    @include heart;
   }
 }
+  Footer{
+    @include flex-column;
+    background-color:rgba(0, 0, 0, 0.808);
+  }
+ 
