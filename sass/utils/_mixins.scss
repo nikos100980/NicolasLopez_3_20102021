@@ -115,3 +115,9 @@
   color: black;
   font-weight: normal;
 }
+@mixin footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  color: whitesmoke;
+}

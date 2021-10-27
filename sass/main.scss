@@ -9,13 +9,14 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  
   
 }
 body {
   background-color: $color-body;
   max-width: 375px;
   margin: auto;
+  font-family: "Roboto", sans-serif;
 }
 h1 {
   font-size: 2.7em;
@@ -39,6 +40,7 @@ i {
 }
 a{
   text-decoration: none;
+  color: white
 }
 // En tête du site avec le header
 .header-search {
@@ -141,8 +143,51 @@ a{
     @include heart;
   }
 }
-  Footer{
-    @include flex-column;
-    background-color:rgba(0, 0, 0, 0.808);
+.Footer {
+  width: 100%;
+  background-color: #353535;
+  @include flex;
+  &__container {
+      display: inline;
+      padding: 0 40px;
+      width: 100%;
+      max-width: 1200px;
+      margin-bottom: 30px;
+      & .logo {
+          font-family: 'Shrikhand' ,'cursive';
+          color: white;
+          font-size: 2em;
+          padding: 15px;
+      }
+      &-links {
+          display: inline-flex;
+          flex-direction: column;
+          width: auto;
+      }
+      &-link {
+          display: inline-flex;
+          align-items: center;
+          flex-direction: row;
+          text-align: center;
+          color: white;
+          height: 3em;
+          cursor: pointer;
+         
+          
+          & i {
+           margin-right: 7px;
+           width: 30px;
+           height: 30px;
+          }
+          &__title {
+              font-size:1.6em;
+              font-weight: 400;
+              color: white;
+          }
+          
+      }
   }
+}
+
+  
  
