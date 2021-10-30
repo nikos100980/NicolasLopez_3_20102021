@@ -41,7 +41,7 @@ a {
   color: white;
 }
 
-// En-tete avec integration du logo + image du restaurant 
+// En-tete avec integration du logo + image du restaurant
 .Header {
   display: flex;
   margin-bottom: 15px;
@@ -57,10 +57,9 @@ a {
   }
   &__arrow {
     @include arrow;
-    & a{
-        color: black; 
+    & a {
+      color: black;
     }
-    
   }
 }
 
@@ -123,7 +122,6 @@ main {
   @include list;
   @include shadow;
   @include flex;
-  
 
   font-size: 10px;
   padding: 0 15px;
@@ -137,7 +135,7 @@ main {
     margin-bottom: 10px;
   }
   & p {
-      max-width: 219px;
+    max-width: 219px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
