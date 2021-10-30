@@ -4,7 +4,9 @@
   "description": "Projet 3 :\"Ohmyfood\"",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    
+    "sass": "sass --watch ./sass/: ./style/"
+    
   },
   "repository": {
     "type": "git",

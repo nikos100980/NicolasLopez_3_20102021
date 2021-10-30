@@ -10,7 +10,176 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/menu.css" />
     <title>Ohmyfood</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- Header comportant sa fleche + son logo "ohmyfood" -->
+      <div class="Header">
+        <div class="Header__arrow">
+          <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="Header__title">
+          <img
+            src="/images/logo/ohmyfood@2x.svg"
+            class="Header__title--size"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- Insertion de la photo d'un plat du restaurant  -->
+      <div class="Header-pics">
+        <img
+          src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          class="Header-pics__size"
+          alt="Plat de la palette du goût"
+        />
+      </div>
+    </header>
+    <main>
+      <!-- Ajout de l'unique section qui comportera le menu sous forme de 3 div  -->
+      <section class="Section">
+        <div class="Section__title">
+          <h2>La palette du goût</h2>
+          <i class="far fa-heart"></i>
+        </div>
+        <div class="grid-composition">
+          <div class="grid-composition__disposition">
+            <h2>Entrées</h2>
+            <div class="Food-composition Food-composition--modifier">
+              <div class="Food-composition__flex">
+                <h3>Fricassée d'escargot</h3>
+                <p>Au piment d'Espelette</p>
+              </div>
+              <div class="Food-composition__price">
+                <span>25€</span>
+              </div>
+            </div>
+            <div class="Food-composition Food-composition--modifier">
+              <div class="Food-composition__flex">
+                <h3>Foie gras de canard mi-cuit</h3>
+                <p>Et ses copeaux de truffe noire</p>
+              </div>
+              <div class="Food-composition__price">
+                <span>35€</span>
+              </div>
+            </div>
+            <div class="Food-composition Food-composition--modifier">
+              <div class="Food-composition__flex">
+                <h3>Oeuf au plat</h3>
+                <p>Assaisonné à la truffe sur lit de caviar</p>
+              </div>
+              <div class="Food-composition__price">
+                <span>20€</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-composition__disposition">
+            <h2>Plats</h2>
+            <div class="Food-composition Food-composition--modifier">
+              <div class="Food-composition__flex">
+                <h3>Filet de boeuf aux herbes</h3>
+                <p>Accompagné de sa ribambelle de légumes</p>
+              </div>
+              <div class="Food-composition__price">
+                <span>40€</span>
+              </div>
+            </div>
+            <div class="Food-composition Food-composition--modifier">
+              <div class="Food-composition__flex">
+                <h3>Parmentier de queue de boeuf</h3>
+                <p>À la truffe noire sur sa purée de panais</p>
+              </div>
+              <div class="Food-composition__price">
+                <span>35€</span>
+              </div>
+            </div>
+            <div class="Food-composition Food-composition--modifier">
+              <div class="Food-composition__flex">
+                <h3>Filet de turbot</h3>
+                <p>Aux agrumes</p>
+              </div>
+              <div class="Food-composition__price">
+                <span>44€</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-composition__disposition">
+            <h2>Desserts</h2>
+            <div class="Food-composition Food-composition--modifier">
+              <div class="Food-composition__flex">
+                <h3>Paris-Brest</h3>
+                <p>Revisité</p>
+              </div>
+              <div class="Food-composition__price">
+                <span>18€</span>
+              </div>
+            </div>
+            <div class="Food-composition Food-composition--modifier">
+              <div class="Food-composition__flex">
+                <h3>Macaron au chocolat d'exception</h3>
+                <p>Et glace à la vanille de Madagascar</p>
+              </div>
+              <div class="Food-composition__price">
+                <span>22€</span>
+              </div>
+            </div>
+            <div class="Food-composition Food-composition--modifier">
+              <div class="Food-composition__flex">
+                <h3>Mousse au chocolat</h3>
+                <p>Au piment d'Espelette et à la truffe noire</p>
+              </div>
+              <div class="Food-composition__price">
+                <span>23€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Ajout d'un boutton pour comander  -->
+        <div class="Food-order">
+          <button type="submit" class="Food-order__btn Food-order__btn--resize">
+            Commander
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Fin de la section  -->
+
+    <!-- Ajout du footer qui correspond au meme que celui de l'acceuil -->
+    <footer class="Footer">
+      <div class="Footer__container">
+        <div class="logo"><a href="index.html">ohmyfood</a></div>
+        <div class="Footer__container-links">
+          <div class="Footer__container-link">
+            <i class="fas fa-utensils"></i>
+            <h3 class="Footer__container-link__title">
+              Proposer un restaurant
+            </h3>
+          </div>
+          <div class="Footer__container-link">
+            <i class="fas fa-hands-helping"></i>
+            <h3 class="Footer__container-link__title">Devenir partenaire</h3>
+          </div>
+          <div class="Footer__container-link">
+            <h3 class="Footer__container-link__title">Mentions légales</h3>
+          </div>
+          <div class="Footer__container-link">
+            <h3 class="Footer__container-link__title">
+              <a href="mailto:contact@ohmyfood.com">Contact</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
+<!-- Fin du code la page menu 1 -->

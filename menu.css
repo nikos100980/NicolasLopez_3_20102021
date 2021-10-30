@@ -1,0 +1,237 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 2.7em;
+  font-weight: 600;
+  line-height: 1em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: black;
+}
+
+p,
+span,
+i {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.Header {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.Header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Header__title--size {
+  width: 200px;
+  height: 25px;
+}
+.Header__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+.Header__arrow a {
+  color: black;
+}
+
+.Header-pics {
+  width: 100%;
+  height: 50vh;
+}
+.Header-pics__size {
+  height: 100%;
+  width: 110%;
+  object-fit: cover;
+}
+
+main {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section {
+  background-color: #f6f6f6;
+  width: 100%;
+  margin-top: -40px;
+  border-radius: 30px;
+  padding: 0 20px;
+}
+.Section h2 {
+  margin-bottom: 20px;
+}
+.Section__title {
+  font-family: "Shrikhand", "sans-serif";
+  font-size: 1.2em;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+.Section__title i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.grid-composition {
+  display: grid;
+  height: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+.grid-composition__disposition {
+  display: flex;
+  flex-direction: column;
+  font-size: 8px;
+}
+.grid-composition__disposition h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.Food-composition {
+  background-color: #f6f6f6;
+  width: 250px;
+  height: 50px;
+  border: solid 1px #f6f6f6;
+  border-radius: 15px;
+  margin-bottom: 22px;
+  box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  padding: 0 15px;
+  line-height: 2em;
+}
+.Food-composition--modifier {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.Food-composition p {
+  max-width: 219px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Food-composition__price {
+  width: 30px;
+  padding-top: 21px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.Food-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 40px 0;
+}
+.Food-order__btn {
+  background: linear-gradient(to bottom, #ff79db, #9456dc);
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  width: 200px;
+  height: 40px;
+  margin-bottom: 50px;
+  color: white;
+  cursor: pointer;
+}
+.Food-order__btn--resize {
+  width: 150px;
+  margin-bottom: 0;
+}
+
+.Footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Footer__container {
+  display: inline;
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+.Footer__container .logo {
+  font-family: "Shrikhand", "cursive";
+  color: white;
+  font-size: 2em;
+  padding: 15px;
+}
+.Footer__container-links {
+  display: inline-flex;
+  flex-direction: column;
+  width: auto;
+}
+.Footer__container-link {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+.Footer__container-link i {
+  width: 30px;
+  padding-right: 12px;
+}
+.Footer__container-link__title {
+  font-size: 1.6em;
+  font-weight: 400;
+  color: white;
+}
+
+/*# sourceMappingURL=menu.css.map */

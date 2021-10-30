@@ -12,15 +12,13 @@
   cursor: pointer;
 }
 @mixin shadow {
-  
-  box-shadow: 0px 6px 23px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.2);
 }
 @mixin section-title {
   width: 100%;
   height: 70px;
   padding-left: 20px;
   padding-top: 30px;
-  
 }
 @mixin header-search {
   display: flex;
@@ -69,7 +67,7 @@
 @mixin grid {
   display: grid;
   height: auto;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   row-gap: 20px;
 }
 @mixin card {
@@ -120,4 +118,14 @@
   flex-direction: column;
   justify-items: start;
   color: whitesmoke;
+}
+// Mixins de la partie des menus
+
+@mixin arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  margin-right: 20px;
+  
 }

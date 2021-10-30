@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   max-width: 375px;
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -102,10 +102,10 @@ a {
 }
 
 .Filter {
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   width: 250px;
   height: 50px;
-  border: solid 1px #f2f2f2;
+  border: solid 1px #f6f6f6;
   border-radius: 15px;
   margin-bottom: 22px;
   display: flex;
@@ -148,10 +148,11 @@ a {
 .Bloc-restaurant {
   display: grid;
   height: auto;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   row-gap: 20px;
   width: 100%;
   margin-bottom: 55px;
+  padding: 15px;
 }
 
 .Bloc-card {
@@ -246,13 +247,12 @@ a {
   flex-direction: row;
   text-align: center;
   color: white;
-  height: 3em;
+  height: 30px;
   cursor: pointer;
 }
 .Footer__container-link i {
-  margin-right: 7px;
   width: 30px;
-  height: 30px;
+  padding-right: 12px;
 }
 .Footer__container-link__title {
   font-size: 1.6em;
@@ -260,4 +260,4 @@ a {
   color: white;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

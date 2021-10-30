@@ -1,0 +1,207 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// Parametres generaux
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $color-body;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 2.7em;
+  font-weight: 600;
+  line-height: 1em;
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: black;
+}
+p,
+span,
+i {
+  font-size: 1.2em;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+// En-tete avec integration du logo + image du restaurant 
+.Header {
+  display: flex;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  &__title {
+    @include flex;
+    flex-direction: column;
+
+    &--size {
+      width: 200px;
+      height: 25px;
+    }
+  }
+  &__arrow {
+    @include arrow;
+    & a{
+        color: black; 
+    }
+    
+  }
+}
+
+.Header-pics {
+  width: 100%;
+  height: 50vh;
+  &__size {
+    height: 100%;
+    width: 110%;
+    object-fit: cover;
+  }
+}
+
+//  Mis en place de l'unique section des menus
+main {
+  background-color: white;
+  width: 100%;
+  @include flex;
+}
+.Section {
+  background-color: $color-body;
+  width: 100%;
+  margin-top: -40px;
+  border-radius: 30px;
+  padding: 0 20px;
+  & h2 {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-family: "Shrikhand", "sans-serif";
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-body;
+
+    & i {
+      @include logo-items;
+      font-size: 20px;
+      margin-bottom: 18px;
+    }
+  }
+}
+// Ajout d'un grid pour partitioner les ( entrée , plat et dessert)
+.grid-composition {
+  @include grid;
+  &__disposition {
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    & h2 {
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+.Food-composition {
+  @include list;
+  @include shadow;
+  @include flex;
+  
+
+  font-size: 10px;
+  padding: 0 15px;
+  line-height: 2em;
+
+  &--modifier {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  & p {
+      max-width: 219px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__price {
+    width: 30px;
+    padding-top: 21px;
+    font-weight: bold;
+    font-size: 11px;
+  }
+}
+// Mis en forme du boutton "commander "
+.Food-order {
+  @include flex;
+  margin: 30px 0 40px 0;
+  &__btn {
+    @include btn;
+    &--resize {
+      width: 150px;
+      margin-bottom: 0;
+    }
+  }
+}
+//  Pied de page ( reutilisation a l'identique de celui de notre page d'acceuil
+.Footer {
+  width: 100%;
+  background-color: #353535;
+  @include flex;
+  &__container {
+    display: inline;
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+    & .logo {
+      font-family: "Shrikhand", "cursive";
+      color: white;
+      font-size: 2em;
+      padding: 15px;
+    }
+    &-links {
+      display: inline-flex;
+      flex-direction: column;
+      width: auto;
+    }
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      flex-direction: row;
+      text-align: center;
+      color: white;
+      height: 30px;
+      cursor: pointer;
+
+      & i {
+        width: 30px;
+        padding-right: 12px;
+      }
+      &__title {
+        font-size: 1.6em;
+        font-weight: 400;
+        color: white;
+      }
+    }
+  }
+}
+//  Fin de la premiere page menu

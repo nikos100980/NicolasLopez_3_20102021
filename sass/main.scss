@@ -9,8 +9,6 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
-  
 }
 body {
   background-color: $color-body;
@@ -36,11 +34,10 @@ p,
 span,
 i {
   font-size: 1.4em;
-  
 }
-a{
+a {
   text-decoration: none;
-  color: white
+  color: white;
 }
 // En tête du site avec le header
 .header-search {
@@ -75,10 +72,9 @@ a{
   &__Bloc-filter {
     padding-top: 20px;
     @include flex-column;
-    
   }
 }
-.section-title{
+.section-title {
   @include section-title;
 }
 .Filter {
@@ -105,89 +101,84 @@ a{
   }
 }
 // Section des restaurants comportant les vignettes
-.Bloc-restaurant{
-    @include grid;
-    width: 100%;
-    margin-bottom: 55px;
-    
-
-    
+.Bloc-restaurant {
+  @include grid;
+  width: 100%;
+  margin-bottom: 55px;
+  padding: 15px;
 }
 
-.Bloc-card{
-  &__pointer{
+.Bloc-card {
+  &__pointer {
     width: 100%;
     height: auto;
   }
   @include card;
   @include shadow;
-  &__img{
+  &__img {
     @include img;
-    
   }
-  &__title{
+  &__title {
     @include title;
-    &--font-size h3{
+    &--font-size h3 {
       font-size: 1.7em;
     }
-    &--font-size p{
-      color: black
+    &--font-size p {
+      color: black;
     }
   }
-  &__new{
+  &__new {
     @include absolute;
     @include flex;
   }
-  &__like{
+  &__like {
     @include flex;
     @include heart;
   }
 }
+
+// Mise en frome de la partie footer
 .Footer {
   width: 100%;
   background-color: #353535;
   @include flex;
   &__container {
-      display: inline;
-      padding: 0 40px;
-      width: 100%;
-      max-width: 1200px;
-      margin-bottom: 30px;
-      & .logo {
-          font-family: 'Shrikhand' ,'cursive';
-          color: white;
-          font-size: 2em;
-          padding: 15px;
+    display: inline;
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+    & .logo {
+      font-family: "Shrikhand", "cursive";
+      color: white;
+      font-size: 2em;
+      padding: 15px;
+    }
+    &-links {
+      display: inline-flex;
+      flex-direction: column;
+      width: auto;
+    }
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      flex-direction: row;
+      text-align: center;
+      color: white;
+      height: 30px;
+      cursor: pointer;
+
+      & i {
+        width: 30px;
+        padding-right: 12px;
       }
-      &-links {
-          display: inline-flex;
-          flex-direction: column;
-          width: auto;
+      &__title {
+        font-size: 1.6em;
+        font-weight: 400;
+        color: white;
       }
-      &-link {
-          display: inline-flex;
-          align-items: center;
-          flex-direction: row;
-          text-align: center;
-          color: white;
-          height: 3em;
-          cursor: pointer;
-         
-          
-          & i {
-           margin-right: 7px;
-           width: 30px;
-           height: 30px;
-          }
-          &__title {
-              font-size:1.6em;
-              font-weight: 400;
-              color: white;
-          }
-          
-      }
+    }
   }
 }
 
-  
- 
+// Page menu "La palette du goût
