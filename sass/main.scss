@@ -42,14 +42,34 @@ a {
 // En tête du site avec le header
 .header-search {
   @include header-search;
-
+  &__logo{
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    @include flex;
+   
+    
+}
   &__form {
     width: 100%;
     height: 40px;
     border: none;
     @include flex;
-    background-color: #e4e1e1;
+    background-color: $color-form;
     margin-bottom: 30px;
+    & input{
+      border: none;
+      background-color:$color-form;
+      margin-left: 15px;
+      font-size: 1.5em;
+      font-family: 'roboto'sans-serif;
+      font-weight: bold;
+      width: 160px;
+      
+    }
+    & input:focus{
+      outline-style: none ;
+    }
   }
   &__title {
     margin-bottom: 10px;
