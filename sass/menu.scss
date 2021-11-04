@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 
 // Parametres generaux
 html {
@@ -105,7 +106,7 @@ main {
     }
   }
 }
-// Ajout d'un grid pour partitioner les ( entrée , plat et dessert)
+// Ajout d'un grid pour partitioner les ( entrées , plats et desserts)
 .grid-composition {
   @include grid;
   &__disposition {
@@ -122,10 +123,10 @@ main {
   @include list;
   @include shadow;
   @include flex;
-
   font-size: 10px;
   padding: 0 15px;
   line-height: 2em;
+  animation: menu 1s ease-in 0ms 1 alternate backwards;
 
   &--modifier {
     background-color: white;

@@ -47,7 +47,16 @@
   justify-content: center;
   align-items: center;
 }
-@mixin logo-items {
+@mixin hover-filter($colour:$color-primary){
+  @if (lightness($colour)< 70%) {
+    $colour: lighten($colour,35%)
+  }
+  @else {
+    $colour:darken($colour,10%)
+  }
+  background-color: $colour;
+}
+@mixin logo-items{
   width: 40px;
   height: 40px;
   display: flex;

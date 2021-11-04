@@ -103,8 +103,17 @@ a {
   @include shadow;
   position: relative;
   color: grey;
+  background-color: $color-body;
+  cursor: pointer;
+  &.Filter:hover{
+    background-color: $color-primary;
+    @include hover-filter;
+  }
   &__logo {
     @include logo-items;
+    & i:hover{
+      color: $color-primary
+    }
   }
   &__title {
     @include flex;
