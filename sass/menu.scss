@@ -116,7 +116,18 @@ main {
     & h2 {
       font-weight: normal;
       text-transform: uppercase;
-    }
+      padding-left: 10px;
+      
+      
+      }
+      & h2::after{
+        content:" ";
+        background-color: $color-tertiary;
+        display:block;
+        width: 45px;
+        height: 4px;
+        margin-top: 5px;
+      }
   }
 }
 .Food-composition {
