@@ -165,9 +165,15 @@ main {
   margin: 30px 0 40px 0;
   &__btn {
     @include btn;
+    transition: 0.5s;
+      &:hover{
+        filter: brightness(110%) ;
+        box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.5);
+    }
     &--resize {
       width: 150px;
       margin-bottom: 0;
+
     }
   }
 }

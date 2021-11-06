@@ -98,7 +98,12 @@ a {
   margin-bottom: 50px;
   color: white;
   cursor: pointer;
-  box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+.header-search__btn:hover {
+  filter: brightness(110%);
+  box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.5);
 }
 
 .container-filter {
@@ -125,17 +130,17 @@ a {
   background-color: #f6f6f6;
   width: 250px;
   height: 50px;
-  border: solid 1px #f6f6f6;
   border-radius: 15px;
   margin-bottom: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.1);
   position: relative;
   color: grey;
   background-color: #f6f6f6;
   cursor: pointer;
+  transition: 0.3s;
 }
 .Filter.Filter:hover {
   background-color: #9356dc;
@@ -189,7 +194,7 @@ a {
   height: auto;
   border-radius: 15px;
   position: relative;
-  box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.1);
 }
 .Bloc-card__pointer {
   width: 100%;
