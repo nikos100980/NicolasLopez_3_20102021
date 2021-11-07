@@ -8,6 +8,24 @@
     opacity: 1;
   }
 }
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -82,6 +100,7 @@ a {
 .Header-pics {
   width: 100%;
   height: 50vh;
+  overflow: hidden;
 }
 .Header-pics__size {
   height: 100%;
@@ -126,16 +145,11 @@ main {
   margin-bottom: 18px;
 }
 
-.grid-composition {
-  display: grid;
-  height: auto;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 20px;
-}
 .grid-composition__disposition {
   display: flex;
   flex-direction: column;
   font-size: 8px;
+  margin-bottom: 40px;
   animation: menu 1s ease-in 0ms 1 alternate backwards;
 }
 .grid-composition__disposition h2 {
@@ -169,8 +183,10 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 10px;
-  padding: 0 15px;
   line-height: 2em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 .Food-composition--modifier {
   background-color: white;
@@ -179,17 +195,51 @@ main {
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.Food-composition p {
-  max-width: 219px;
+.Food-composition__menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Food-composition__flex {
   white-space: nowrap;
+  overflow: hidden;
+  margin-left: 20px;
+}
+.Food-composition__flex p,
+.Food-composition__flex h3 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .Food-composition__price {
-  width: 30px;
-  padding-top: 21px;
+  padding: 21px 20px 0 8px;
   font-weight: bold;
   font-size: 11px;
+}
+.Food-composition:hover .Food-composition__price {
+  padding-right: 80px;
+  transition: padding-right 0.5s 0.5s ease;
+}
+.Food-composition:hover .roll {
+  display: flex;
+  animation: slide-in-right 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+}
+
+.fa-check-circle {
+  color: white;
+  animation: rotate-center 1.3s 100ms ease 1 none;
+}
+
+.roll {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 0 15px 15px 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
 }
 
 .Food-order {
