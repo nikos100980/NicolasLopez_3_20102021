@@ -1,25 +1,24 @@
 // Création du loader spinner
 
 @keyframes spinner {
-    0% {
-        visibility: visible;
-        opacity: 0.9;
-    }
-    70% {
-        opacity: 0.9;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
+  0% {
+    visibility: visible;
+    opacity: 0.9;
   }
-  @keyframes spin {
-    to {
-        transform: rotate(360deg);
-        opacity: 1;
-    }
+  70% {
+    opacity: 0.9;
   }
-
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
 
 // Creéation de l'animation d'apparition progressive des menus
 @keyframes menu {

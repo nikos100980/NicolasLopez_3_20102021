@@ -13,7 +13,7 @@ html {
 }
 body {
   background-color: $color-body;
-
+  max-width: 1440px;
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
@@ -126,14 +126,13 @@ a {
 .container-filter {
   width: 100%;
   background-color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 15px;
   @include flex-column;
 
   &__Bloc-filter {
     padding-top: 20px;
     @include flex-column;
-
+    max-width: 1440px;
     @media screen and (min-width: 700px) {
       flex-direction: row;
     }
@@ -281,7 +280,7 @@ a {
       width: auto;
       @media screen and (min-width: 700px) {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 100%;
       }
     }

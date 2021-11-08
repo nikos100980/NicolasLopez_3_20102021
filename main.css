@@ -57,6 +57,7 @@ html {
 
 body {
   background-color: #f6f6f6;
+  max-width: 1440px;
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
@@ -191,8 +192,7 @@ a {
 .container-filter {
   width: 100%;
   background-color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,6 +204,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1440px;
 }
 @media screen and (min-width: 700px) {
   .container-filter__Bloc-filter {
@@ -417,7 +418,7 @@ a {
 @media screen and (min-width: 700px) {
   .Footer__container-links {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
   }
 }

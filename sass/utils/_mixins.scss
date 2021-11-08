@@ -11,13 +11,14 @@
   color: white;
   cursor: pointer;
 }
+
+// Pour les ombrages
 @mixin shadow {
   box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.1);
 }
 @mixin section-title {
   width: 100%;
   padding-left: 20px;
-  
 }
 @mixin header-search {
   display: flex;
@@ -46,6 +47,7 @@
   justify-content: center;
   align-items: center;
 }
+// Mixin pour faire une condition afin d'éclaircir ou d'assombrir en fonction de la luminosité de la couleur
 @mixin hover-filter($colour: $color-primary) {
   @if (lightness($colour) < 70%) {
     $colour: lighten($colour, 35%);
@@ -54,6 +56,7 @@
   }
   background-color: $colour;
 }
+
 @mixin logo-items {
   width: 40px;
   height: 40px;
@@ -61,7 +64,7 @@
   justify-content: center;
   align-items: center;
 }
-
+//  Mixin pour la petite pastille numeroté sur le bouton des filtres
 @mixin pastille {
   background-color: $color-primary;
   border-radius: 45px;
