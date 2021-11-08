@@ -105,6 +105,23 @@ main {
       font-size: 20px;
       margin-bottom: 18px;
     }
+    // effet de remplissage du bouton like
+    .fa-heart {
+      color: black;
+      font-weight: normal;
+      background-color: $color-body;
+      border-radius: 50%;
+
+      &:before {
+        font-weight: normal;
+        transition: color 0.5s ease-out;
+      }
+      &:hover:before {
+        color: #d76cda;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
   }
 }
 // Ajout d'un grid pour partitioner les ( entrées , plats et desserts)

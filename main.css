@@ -248,6 +248,22 @@ a {
   font-weight: normal;
 }
 
+.fa-heart {
+  color: black;
+  font-weight: normal;
+  background-color: white;
+  border-radius: 50%;
+}
+.fa-heart:before {
+  font-weight: normal;
+  transition: color 0.5s ease-out;
+}
+.fa-heart:hover:before {
+  color: #d76cda;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .Footer {
   width: 100%;
   background-color: #353535;
