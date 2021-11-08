@@ -89,6 +89,15 @@ a {
   color: white;
 }
 
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .center-body {
   display: flex;
   justify-content: center;
@@ -180,9 +189,14 @@ a {
 }
 
 .container-filter {
+  width: 100%;
   background-color: white;
   padding-top: 40px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container-filter__Bloc-filter {
   padding-top: 20px;
@@ -191,17 +205,25 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 700px) {
+  .container-filter__Bloc-filter {
+    flex-direction: row;
+  }
+}
 
 .section-title {
   width: 100%;
-  height: 70px;
   padding-left: 20px;
-  padding-top: 30px;
+}
+@media screen and (min-width: 700px) {
+  .section-title {
+    margin-left: 35%;
+  }
 }
 
 .Filter {
   background-color: #f6f6f6;
-  width: 270px;
+  width: 100%;
   height: 50px;
   border-radius: 15px;
   margin-bottom: 22px;
@@ -214,6 +236,7 @@ a {
   background-color: #f6f6f6;
   cursor: pointer;
   transition: 0.3s;
+  margin: 22px 20px;
 }
 .Filter.Filter:hover {
   background-color: #9356dc;
@@ -225,6 +248,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 11px;
 }
 .Filter__logo i:hover {
   color: #9356dc;
@@ -233,8 +257,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 100%;
   height: 50px;
+  margin-right: 29px;
 }
 .Filter__title--text-align {
   justify-content: left;
@@ -252,13 +277,36 @@ a {
   height: 15px;
 }
 
+.Section {
+  margin: 0;
+  background: #f6f6f6;
+  padding: 20px;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 700px) {
+  .Section {
+    width: 100%;
+  }
+}
+
 .Bloc-restaurant {
   display: grid;
-  height: auto;
-  row-gap: 20px;
-  width: 100%;
-  margin-bottom: 55px;
-  padding: 15px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+@media screen and (min-width: 700px) {
+  .Bloc-restaurant {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+    width: 65%;
+  }
 }
 
 .Bloc-card {
@@ -267,10 +315,6 @@ a {
   border-radius: 15px;
   position: relative;
   box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.1);
-}
-.Bloc-card__pointer {
-  width: 100%;
-  height: auto;
 }
 .Bloc-card__img {
   width: 100%;
@@ -287,8 +331,8 @@ a {
   height: 60px;
   background-color: white;
   border-radius: 0 0 15px 15px;
-  padding: 0 15px;
   color: black;
+  padding-left: 15px;
 }
 .Bloc-card__title--font-size h3 {
   font-size: 1.7em;
@@ -358,10 +402,24 @@ a {
   font-size: 2em;
   padding: 15px;
 }
+@media screen and (min-width: 700px) {
+  .Footer__container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .Footer__container-links {
   display: inline-flex;
   flex-direction: column;
   width: auto;
+}
+@media screen and (min-width: 700px) {
+  .Footer__container-links {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .Footer__container-link {
   display: inline-flex;
