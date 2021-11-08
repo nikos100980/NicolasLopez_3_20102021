@@ -30,9 +30,9 @@
 }
 @mixin list {
   background-color: $color-body;
-  width: 250px;
+  width: 270px;
   height: 50px;
-  
+
   border-radius: 15px;
   margin-bottom: 22px;
 }
@@ -47,16 +47,15 @@
   justify-content: center;
   align-items: center;
 }
-@mixin hover-filter($colour:$color-primary){
-  @if (lightness($colour)< 70%) {
-    $colour: lighten($colour,35%)
-  }
-  @else {
-    $colour:darken($colour,10%)
+@mixin hover-filter($colour: $color-primary) {
+  @if (lightness($colour) < 70%) {
+    $colour: lighten($colour, 35%);
+  } @else {
+    $colour: darken($colour, 10%);
   }
   background-color: $colour;
 }
-@mixin logo-items{
+@mixin logo-items {
   width: 40px;
   height: 40px;
   display: flex;
@@ -76,7 +75,7 @@
 @mixin grid {
   display: grid;
   height: auto;
-  
+
   row-gap: 20px;
 }
 @mixin card {
@@ -130,11 +129,10 @@
 }
 // Mixins de la partie des menus
 
-@mixin arrow{
+@mixin arrow {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 20px;
   margin-right: 20px;
-  
 }
