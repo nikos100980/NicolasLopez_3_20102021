@@ -133,7 +133,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.header-search__logo {
+.header-search__container {
   background-color: white;
   height: 60px;
   width: 100%;
@@ -143,9 +143,14 @@ a {
   justify-content: center;
   align-items: center;
 }
-.header-search__logo--size {
+.header-search__container--size {
   width: 200px;
   height: 25px;
+}
+.header-search__logo {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  color: black;
 }
 .header-search__form {
   width: 100%;

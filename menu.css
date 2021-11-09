@@ -109,9 +109,10 @@ a {
   align-items: center;
   flex-direction: column;
 }
-.Header__title--size {
-  width: 200px;
-  height: 25px;
+.Header__logo {
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  color: black;
 }
 .Header__arrow {
   display: flex;

@@ -57,10 +57,13 @@ a {
     @include flex;
     flex-direction: column;
 
-    &--size {
-      width: 200px;
-      height: 25px;
-    }
+    
+    
+  }
+  &__logo{
+    font-family: 'Shrikhand', 'cursive';
+    margin: 0;
+    color: black;
   }
   &__arrow {
     @include arrow;
