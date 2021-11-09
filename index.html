@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Ohmyfood</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="main.css" />
-  <title>Ohmyfood</title>
-</head>
-
-<body>
-  <div class="center-body">
-  <div class="loader-circle-51"></div>
-    
-  </div>
-  <!-- En tête de notre page acceuil -->
-  <header class="header-search">
-
-    <div class="header-search__logo">
-      <img src="./images/logo/ohmyfood@2x.svg" alt="logo Site" />
+  <body>
+    <div class="center-body">
+      <div class="loader-circle-51"></div>
     </div>
-  </header>
-  <main class="main">
-    <!-- Section localisation avec presentation du site et le bouton de recherche -->
-    <section class="header-search">
+    <!-- En tête de notre page acceuil -->
+    <header class="header-search">
+      <div class="header-search__logo">
+        <img src="./images/logo/ohmyfood@2x.svg" class="header-search__logo--size" alt="logo Site" />
+      </div>
+    </header>
+    <main class="main">
+      <!-- Section localisation avec presentation du site et le bouton de recherche -->
+
       <form class="header-search__form">
         <i class="fas fa-map-marker-alt"></i>
         <input type="search" name="q" value="Paris, Belleville" />
@@ -43,7 +46,6 @@
           Explorez nos restaurants
         </button>
       </section>
-
 
       <!-- bloc fonctionnement avec ses filtres  -->
       <section class="container-filter">
@@ -82,110 +84,121 @@
       <section class="Section">
         <h2 class="section-title">Restaurants</h2>
         <div class="Bloc-restaurant">
-          <div class="Bloc-card">
-            <a href="menu1.html">
-
-              <img class="Bloc-card__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" />
+          <a href="menu1.html">
+            <div class="Bloc-card">
+              <img
+                class="Bloc-card__img"
+                src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt=""
+              />
 
               <div class="Bloc-card__title">
                 <div class="Bloc-card__title--font-size">
                   <h3>La palette du goût</h3>
                   <p>Ménilmontant</p>
                 </div>
-            </a>
-            <div class="Bloc-card__like">
-              <i class="far fa-heart"></i>
-            </div>
-            <div class="Bloc-card__new">
-              <p>Nouveau</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="Bloc-card">
+                <div class="Bloc-card__like">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="Bloc-card__new">
+                  <p>Nouveau</p>
+                </div>
+              </div>
+            </div>
+          </a>
           <a href="menu2.html">
+            <div class="Bloc-card">
+              <img
+                class="Bloc-card__img"
+                src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt=""
+              />
 
-            <img class="Bloc-card__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" />
+              <div class="Bloc-card__title">
+                <div class="Bloc-card__title--font-size">
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
+                </div>
 
-            <div class="Bloc-card__title">
-              <div class="Bloc-card__title--font-size">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
+                <div class="Bloc-card__like">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="Bloc-card__new">
+                  <p>Nouveau</p>
+                </div>
               </div>
+            </div>
           </a>
-          <div class="Bloc-card__like">
-            <i class="far fa-heart"></i>
-          </div>
-          <div class="Bloc-card__new">
-            <p>Nouveau</p>
-          </div>
-        </div>
-        </div>
-
-        <div class="Bloc-card">
           <a href="menu3.html">
+            <div class="Bloc-card">
+              <img
+                class="Bloc-card__img"
+                src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt=""
+              />
 
-            <img class="Bloc-card__img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
+              <div class="Bloc-card__title">
+                <div class="Bloc-card__title--font-size">
+                  <h3>À la française</h3>
+                  <p>Cité Rouge</p>
+                </div>
 
-            <div class="Bloc-card__title">
-              <div class="Bloc-card__title--font-size">
-                <h3>À la française</h3>
-                <p>Cité Rouge</p>
+                <div class="Bloc-card__like">
+                  <i class="far fa-heart"></i>
+                </div>
               </div>
+            </div>
           </a>
-          <div class="Bloc-card__like">
-            <i class="far fa-heart"></i>
-          </div>
 
-        </div>
-        </div>
-
-        <div class="Bloc-card">
           <a href="menu4.html">
+            <div class="Bloc-card">
+              <img
+                class="Bloc-card__img"
+                src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt=""
+              />
 
-            <img class="Bloc-card__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-              alt="" />
+              <div class="Bloc-card__title">
+                <div class="Bloc-card__title--font-size">
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                </div>
 
-            <div class="Bloc-card__title">
-              <div class="Bloc-card__title--font-size">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
+                <div class="Bloc-card__like">
+                  <i class="far fa-heart"></i>
+                </div>
               </div>
+            </div>
           </a>
-          <div class="Bloc-card__like">
-            <i class="far fa-heart"></i>
-          </div>
-
-        </div>
-        </div>
-
-
-
         </div>
       </section>
-  </main>
-  <!-- Pied de page avec les liens + le mailto contact -->
-  <footer class="Footer">
-    <div class="Footer__container">
-      <div class="logo"><a href="index.html">ohmyfood</a></div>
-      <div class="Footer__container-links">
-        <div class="Footer__container-link">
-          <i class="fas fa-utensils"></i>
-          <h3 class="Footer__container-link__title">Proposer un restaurant</h3>
-        </div>
-        <div class="Footer__container-link">
-          <i class="fas fa-hands-helping"></i>
-          <h3 class="Footer__container-link__title">Devenir partenaire</h3>
-        </div>
-        <div class="Footer__container-link">
-          <h3 class="Footer__container-link__title">Mentions légales</h3>
-        </div>
-        <div class="Footer__container-link">
-          <h3 class="Footer__container-link__title"><a href="mailto:contact@ohmyfood.com">Contact</a></h3>
+    </main>
+    <!-- Pied de page avec les liens + le mailto contact -->
+    <footer class="Footer">
+      <div class="Footer__container">
+        <div class="logo"><a href="index.html">ohmyfood</a></div>
+        <div class="Footer__container-links">
+          <div class="Footer__container-link">
+            <i class="fas fa-utensils"></i>
+            <h3 class="Footer__container-link__title">
+              Proposer un restaurant
+            </h3>
+          </div>
+          <div class="Footer__container-link">
+            <i class="fas fa-hands-helping"></i>
+            <h3 class="Footer__container-link__title">Devenir partenaire</h3>
+          </div>
+          <div class="Footer__container-link">
+            <h3 class="Footer__container-link__title">Mentions légales</h3>
+          </div>
+          <div class="Footer__container-link">
+            <h3 class="Footer__container-link__title">
+              <a href="mailto:contact@ohmyfood.com">Contact</a>
+            </h3>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </body>
-
-  </html>
+</html>

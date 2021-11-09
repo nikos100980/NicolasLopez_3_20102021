@@ -12,7 +12,8 @@ html {
   padding: 0;
 }
 body {
-  background-color: $color-body;
+  background-color: white;
+  position:relative;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -49,7 +50,9 @@ a {
 .Header {
   margin-bottom: 15px;
   margin-top: 15px;
-  position: relative;
+  
+  height: 25px;
+  
   &__title {
     @include flex;
     flex-direction: column;
@@ -62,8 +65,8 @@ a {
   &__arrow {
     @include arrow;
     position: absolute;
-    left: 30px;
-    bottom: 4px;
+    left: 0;
+    top: 23px;
     & a {
       color: black;
     }
@@ -91,7 +94,7 @@ main {
   background-color: $color-body;
   width: 100%;
   margin-top: -40px;
-  border-radius: 30px;
+  border-radius: 30px 30px 0 0;
   padding: 0 20px;
   & h2 {
     margin-bottom: 20px;
