@@ -1,5 +1,19 @@
 // Création du loader spinner
 
+@-webkit-keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 @keyframes spinner {
   0% {
     visibility: visible;
@@ -13,6 +27,12 @@
     visibility: hidden;
   }
 }
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -21,6 +41,19 @@
 }
 
 // Creéation de l'animation d'apparition progressive des menus
+@-webkit-keyframes menu {
+  0% {
+    transform: translateY(20px);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
 @keyframes menu {
   0% {
     transform: translateY(20px);
@@ -35,6 +68,14 @@
   }
 }
 // Création de l'animation rotate de l'icone check
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes rotate-center {
   0% {
     transform: rotate(0);
@@ -45,6 +86,17 @@
 }
 
 //   Création de l'animation de l'apparition en slide right du bouton de validation de plat
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 @keyframes slide-in-right {
   0% {

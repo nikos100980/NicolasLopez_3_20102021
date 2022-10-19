@@ -1,3 +1,16 @@
+@-webkit-keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @keyframes spinner {
   0% {
     visibility: visible;
@@ -11,9 +24,25 @@
     visibility: hidden;
   }
 }
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes menu {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -27,12 +56,30 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes rotate-center {
   0% {
     transform: rotate(0);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes slide-in-right {
@@ -138,6 +185,7 @@ a {
 .Header-pics__size {
   height: 100%;
   width: 110%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -206,6 +254,7 @@ main {
   flex-direction: column;
   font-size: 8px;
   margin-bottom: 40px;
+  -webkit-animation: menu 1s ease-in 0ms 1 alternate backwards;
   animation: menu 1s ease-in 0ms 1 alternate backwards;
 }
 @media screen and (min-width: 700px) {
@@ -230,9 +279,11 @@ main {
   margin-top: 5px;
 }
 .grid-composition__disposition--1 {
+  -webkit-animation: menu 1s ease-in 700ms 1 alternate backwards;
   animation: menu 1s ease-in 700ms 1 alternate backwards;
 }
 .grid-composition__disposition--2 {
+  -webkit-animation: menu 1s ease-in 1200ms 1 alternate backwards;
   animation: menu 1s ease-in 1200ms 1 alternate backwards;
 }
 
@@ -286,11 +337,13 @@ main {
 }
 .Food-composition:hover .roll {
   display: flex;
+  -webkit-animation: slide-in-right 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
   animation: slide-in-right 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) both;
 }
 
 .fa-check-circle {
   color: white;
+  -webkit-animation: rotate-center 1.3s 100ms ease 1 none;
   animation: rotate-center 1.3s 100ms ease 1 none;
 }
 
@@ -327,6 +380,7 @@ main {
   transition: 0.5s;
 }
 .Food-order__btn:hover {
+  -webkit-filter: brightness(110%);
   filter: brightness(110%);
   box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.5);
 }
