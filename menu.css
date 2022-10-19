@@ -47,6 +47,7 @@
 }
 html {
   font-size: 62.5%;
+  background-color: darkgray;
 }
 
 * {
@@ -314,10 +315,12 @@ main {
 .Food-order__btn {
   background: linear-gradient(to bottom, #ff79db, #9456dc);
   text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: bold;
   border: none;
   border-radius: 25px;
-  width: 200px;
-  height: 40px;
+  width: 242px;
+  height: 53px;
   margin-bottom: 50px;
   color: white;
   cursor: pointer;

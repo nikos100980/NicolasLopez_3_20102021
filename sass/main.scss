@@ -5,6 +5,7 @@
 // Parametres generaux
 html {
   font-size: 62.5%;
+  background-color: darkgray;
 }
 * {
   box-sizing: border-box;
@@ -27,7 +28,7 @@ h2 {
   font-size: 2em;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 600;
   color: black;
 }
@@ -76,23 +77,22 @@ a {
   @include header-search;
 
   &__container {
-    
     background-color: white;
     height: 60px;
     width: 100%;
     margin-bottom: 5px;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
     @include flex;
-    &--size{
+    &--size {
       width: 200px;
       height: 25px;
     }
   }
-&__logo{
-  font-family: 'Shrikhand', cursive;
-  margin: 0;
-  color: black;
-}
+  &__logo {
+    font-family: "Shrikhand", cursive;
+    margin: 0;
+    color: black;
+  }
   // Création de l'input search
   &__form {
     width: 100%;
@@ -106,7 +106,7 @@ a {
       background-color: $color-form;
       margin-left: 15px;
       font-size: 1.5em;
-      font-family: "roboto" ,'sans-serif';
+      font-family: "roboto", "sans-serif";
       font-weight: bold;
       width: 122px;
     }
@@ -138,23 +138,18 @@ a {
   width: 100%;
   background-color: white;
   padding: 40px 15px;
-  @include flex-column;
 
   &__Bloc-filter {
     padding-top: 20px;
     @include flex-column;
     max-width: 1440px;
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 904px) {
       flex-direction: row;
     }
   }
 }
 .section-title {
   @include section-title;
-
-  @media screen and (min-width: 700px) {
-    margin-left: 35%;
-  }
 }
 .Filter {
   @include list;
@@ -199,12 +194,7 @@ a {
   background: #f6f6f6;
   padding: 20px;
   max-width: 1440px;
-  @include flex;
-  flex-direction: column;
-
-  @media screen and (min-width: 700px) {
-    width: 100%;
-  }
+  width: 100%;
 }
 .Bloc-restaurant {
   display: grid;
@@ -213,11 +203,11 @@ a {
   grid-gap: 20px;
   padding: 20px;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 904px) {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 78px;
-    width: 65%;
+    gap: 32px;
+    width: 100%;
   }
 }
 
@@ -281,7 +271,7 @@ a {
       color: white;
       font-size: 2em;
       padding: 15px;
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 904px) {
         @include flex;
       }
     }
@@ -289,7 +279,7 @@ a {
       display: inline-flex;
       flex-direction: column;
       width: auto;
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: 904px) {
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
